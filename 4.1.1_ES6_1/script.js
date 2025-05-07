@@ -158,4 +158,18 @@ console.log(miArreglo2[-1]); // Este índice no existe en el arreglo, regresa un
 miArreglo.push(32, "peras"); // Permite agregar más de un valor al final de un arreglo.
 console.log(miArreglo);
 
+// Concatenación -> + -> Unir una cadena con otra expresión.
+let nombre1 = "Juanito";
+let apellido1 = "Pérez";
+
+let nombreCompleto1 = nombre1 + " " + apellido1;
+console.log(nombreCompleto1);
+
+// Template literals (template strings) -> Es una cadena que nos permite "inyectarle" valores a esta.
+// ` <- backtick <- Alt + 96 (teclado numérico) (Windows)
+// Escapar un carácter es quitarle sus propiedades especiales dentro de una cadena.
+let nombreCompletoTemplate = `${apellido1} ${nombre1} ${'${}'}`;
+console.log(nombreCompletoTemplate);
+
+
 
