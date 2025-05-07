@@ -203,10 +203,17 @@ let primerEdad = edades[0];
 let segundaEdad = edades[1];
 let tercerEdad = edades[2];
 */
-let [primerEdad, segundaEdad, tercerEdad, _, quintaEdad, sextaEdad] = edades;
+
+/* 
+    Para ignorar un valor solamente dejamos un espacio entre las comas.
+*/
+
+let [primerEdad, segundaEdad, tercerEdad, , quintaEdad, sextaEdad] = edades;
+let [, segundaEdadCopia] = edades;
 console.log(primerEdad);
 console.log(segundaEdad);
 console.log(tercerEdad);
 console.log(quintaEdad);
 console.log(sextaEdad); // No existe un sexto elemento, por lo tanto, el valor de esa variable será undefined.
 
+console.log(segundaEdadCopia);
