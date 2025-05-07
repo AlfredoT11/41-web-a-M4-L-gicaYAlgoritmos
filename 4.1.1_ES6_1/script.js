@@ -171,5 +171,42 @@ console.log(nombreCompleto1);
 let nombreCompletoTemplate = `${apellido1} ${nombre1} ${'${}'}`;
 console.log(nombreCompletoTemplate);
 
+// Destructuración de objetos
+// Descomponer un objeto en sus atributos.
+let gato1 = {
+   nombre: 'Tigrillo',
+   edad: 8,
+   estaEsterilizado: true 
+}
 
+//gato1.nombre
+//gato1["nombre"];
+/*
+    let nombre = gato1.nombre;
+    let edad = gato1.edad;
+    let estaEsterilizado = gato1.estaEsterilizado;
+*/
+// NOTA: Para utilizar destructuración tenemos que declarar la variable sí o sí, no podemos reasignar el valor a una variable previamente creada.
+let edad = 24;
+edad = gato1.edad;
+let { nombre, estaEsterilizado } = gato1;
+console.log(nombre);
+console.log(edad);
+console.log(estaEsterilizado);
+
+
+// Destructuración de arreglos
+//             0   1  2   3   4
+let edades = [25, 36, 2, 54, 26];
+/*
+let primerEdad = edades[0];
+let segundaEdad = edades[1];
+let tercerEdad = edades[2];
+*/
+let [primerEdad, segundaEdad, tercerEdad, _, quintaEdad, sextaEdad] = edades;
+console.log(primerEdad);
+console.log(segundaEdad);
+console.log(tercerEdad);
+console.log(quintaEdad);
+console.log(sextaEdad); // No existe un sexto elemento, por lo tanto, el valor de esa variable será undefined.
 
