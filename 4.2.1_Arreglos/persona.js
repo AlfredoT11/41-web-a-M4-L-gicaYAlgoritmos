@@ -11,7 +11,7 @@ let persona2 = {
 };
 
 let persona3 = {
-    nombre: "Alberto",
+    nombre: "alberto",
     primerApellido: "Torres",
     edad: 15
 };
@@ -32,6 +32,7 @@ let persona5 = {
 //let personas = Array();
 //personas.push(persona1, persona2, persona3, persona4, persona5);
 
+//                     0         1         2         3         4
 let personas = [persona1, persona2, persona3, persona4, persona5];
 let personasMayoresEdad = [persona1, persona2, persona4, persona5];
 
