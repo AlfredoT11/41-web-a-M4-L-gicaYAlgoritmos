@@ -35,3 +35,19 @@ if(fs.existsSync('./archivos/recetas/España')){
     fs.mkdirSync('./archivos/recetas/España');
 }
 
+function agregarAlLog(nombreUsuario, hora, ubicacionArchivo){
+    fs.appendFileSync(ubicacionArchivo, `[${hora}] ${nombreUsuario} ingresó al sistema\n`);
+}
+
+// log <- Registro
+if(!fs.existsSync('./archivos/logs')){
+    fs.mkdirSync('./archivos/logs');
+}
+
+if(!fs.existsSync('./archivos/logs/log.txt')){
+    fs.writeFileSync('./archivos/logs/log.txt', '');
+}
+
+const ubicacionArchivo = './archivos/logs/log.txt';
+agregarAlLog("JuanPerez777", "8:24 p.m.", ubicacionArchivo);
+
