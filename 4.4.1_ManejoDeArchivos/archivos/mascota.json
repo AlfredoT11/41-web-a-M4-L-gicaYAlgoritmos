@@ -1,0 +1,11 @@
+{
+    "nombre": "Tigrillo",
+    "edad": 8,
+    "estaEsterilizado": true,
+    "personaACargo": {
+        "nombre": "Malinali",
+        "edad": 22
+    },
+    "hermanos": ["Bowie", "Gruñiz", "Zoro"],
+    "hijos": null
+}
