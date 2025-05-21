@@ -28,3 +28,10 @@ const recetaCocina = {
 const recetaCocinaJSON = JSON.stringify(recetaCocina); // JSON.stringify() convierte un objeto literal a texto.
 
 fs.writeFileSync('./archivos/recetas/receta1.json', recetaCocinaJSON);
+
+if(fs.existsSync('./archivos/recetas/España')){
+    console.log('Ya existe una carpeta en la ubicación');
+}else{
+    fs.mkdirSync('./archivos/recetas/España');
+}
+
