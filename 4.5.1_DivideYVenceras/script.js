@@ -3,6 +3,8 @@
     Ejemplo de un algoritmo de divide y venceras.
     Este algoritmo solamente se puede aplicar a los arreglos.
     Para poder aplicar la búsqueda binaria, el arreglo debe estar ordenado.
+    Tiempo O(log n)
+    Espacio O(1)
 */
 // Pensar en un número del 1 al 1000.
 /*
@@ -66,6 +68,7 @@ let arreglo = [1, 2, 3, 4, 5, 6, 9, 25, 33, 42, 89]; // length = 11
 /*
     Regresar el índice de la posición del valor buscado.
     Si el valor no existe, regresamos un -1.
+    O(log(n))
 */
 function busquedaBinaria(valorBuscado, arreglo, inicio, final){
     // Si queremos redondear hacia arriba Math.ceil();

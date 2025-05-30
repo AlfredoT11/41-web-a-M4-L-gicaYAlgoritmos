@@ -1,4 +1,6 @@
-// MergeSort -> Se trata de un algoritmo de ordenamiento con complejidad O(n*log(n))
+// MergeSort -> Se trata de un algoritmo de ordenamiento con complejidad 
+// Tiempo O(n*log(n))
+// Espacio O(n)
 
 
 /* 
@@ -7,6 +9,30 @@
     Los arreglos A y B deben estar previamente ordenados.
     El arreglo C debe estar vacío.
 */
+
+/*
+           a                           b
+    [1, 5, 8, 10, 11, 25]    [0, 6, 7]
+
+    a < b
+    [0]
+
+    a < b
+    [0, 1]
+
+    a < b
+    [0, 1, 5]
+
+    a < b
+    [0, 1, 5, 6]
+
+    a < b
+    [0, 1, 5, 6, 7, 8, 10, 11, 25]
+
+
+
+*/
+
 function merge(A, B, C){
 
     let punteroA = 0;
